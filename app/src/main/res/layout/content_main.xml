@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <Button
+        android:id="@+id/bnStop"
+        android:layout_width="152dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnBackward" />
+
+    <Button
+        android:id="@+id/bnFoward"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:text="Forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <Button
+        android:id="@+id/bnLeftCW"
+        android:layout_width="136dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="156dp"
+        android:text="CW"
+        app:layout_constraintEnd_toStartOf="@+id/bnRightCCW"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bnLeftCCW"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="CCW"
+        app:layout_constraintEnd_toStartOf="@+id/bnRightCW"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnLeftCW" />
+
+    <Button
+        android:id="@+id/bnRightCCW"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="36dp"
+        android:text="CCW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bnRightCW"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:text="CW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnRightCCW" />
+
+    <Button
+        android:id="@+id/bnRotateCCW"
+        android:layout_width="147dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="RotateCCW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bnStop"
+        app:layout_constraintTop_toBottomOf="@+id/bnRotateCW" />
+
+    <Button
+        android:id="@+id/bnBackward"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="52dp"
+        android:text="Backward"
+        app:layout_constraintTop_toBottomOf="@+id/bnLeftCCW"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <Button
+        android:id="@+id/bnRotateCW"
+        android:layout_width="136dp"
+        android:layout_height="49dp"
+        android:text="RotateCW"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toEndOf="@+id/bnBackward"
+        app:layout_constraintTop_toBottomOf="@+id/bnRightCW"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Android Tank Control"
+        app:layout_constraintBottom_toTopOf="@+id/bnStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/textViewBT"
+        android:layout_width="127dp"
+        android:layout_height="26dp"
+        android:text="Bluetooth ready . . ."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnFoward"
+        app:layout_constraintVertical_bias="0.019" />
+</androidx.constraintlayout.widget.ConstraintLayout>
